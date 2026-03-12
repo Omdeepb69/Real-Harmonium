@@ -1,0 +1,28 @@
+Source: realharmonium
+Section: sound
+Priority: optional
+Maintainer: Omdeep Borkar <omdeepborkar@gmail.com>
+Build-Depends: debhelper-compat (= 13), dh-python, python3-all, python3-setuptools
+Standards-Version: 4.6.2
+Homepage: https://github.com/realharmonium/realharmonium
+Rules-Requires-Root: no
+
+Package: realharmonium
+Architecture: all
+Depends: ${python3:Depends}, ${misc:Depends},
+         python3-numpy,
+         python3-pygame | python3-pygame (>= 2.0),
+         python3 (>= 3.10)
+Suggests: python3-evdev
+Description: Tilt-controlled harmonium instrument for the Linux terminal
+ realharmonium turns your laptop into a virtual harmonium.
+ .
+ Tilt your laptop screen forward and back to pump the bellows —
+ just like a real harmonium — while playing notes on the keyboard.
+ .
+ Features:
+  - 4-layer reed synthesis (sawtooth + detuned overtones) via numpy + pygame
+  - Linux IIO accelerometer integration for true tilt detection
+  - Full-terminal curses interface with animated bellows meter
+  - Sa drone mode (continuous C + G bass drone)
+  - Zero dependencies beyond numpy and pygame

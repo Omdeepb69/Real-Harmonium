@@ -1,0 +1,11 @@
+realharmonium (1.0.1) noble; urgency=medium
+
+  * Initial release.
+  * 4-layer reed synthesis engine (numpy + pygame).
+  * Linux IIO accelerometer → bellows pressure mapping.
+  * Full-terminal curses UI with animated bellows meter.
+  * Sa drone mode with C4 + G4 + C5 resonance.
+  * evdev fallback for older ThinkPad accelerometers.
+  * Mouse/Space-bar bellows for desktops without sensors.
+
+ -- Omdeep Borkar <omdeepborkar@gmail.com>  Wed, 11 Mar 2026 00:00:00 +0000
